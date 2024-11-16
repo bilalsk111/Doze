@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doze-Studio</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      h3{
+        position: relative;
+        border-bottom: 1px solid #a4a4a4;
+      }
+      h3:before{
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        transition: all ease 0.3s;
+        transform: scaleX(0);
+        background-color: #333;
+
+      }
+      h3:hover:before{
+        transform: scaleX(1);
+      }
+
+      h4{
+        position: relative;
+      }
+      h4:before{
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transition: all ease 0.3s;
+        transform: scaleX(0);
+        background-color: #717070;
+
+      }
+      h4:hover:before{
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="absolute z-[2] text-white flex  top-0 left-0 p-10 justify-between w-full">
+      <h1 class="text-3xl magnet cursor-pointer">Doze-Studio</h1>
+      <div class="flex gap-4 cursor-pointer uppercase">
+        <h4 class="text-5 font-[300]">Product</h4>
+        <h4 class="text-5 font-[300]">About</h4>
+        <h4 class="text-5 font-[300]">Labs</h4>
+      </div>
+      <h5 class="text-3xl font-[400] cursor-pointer">Let's Talk</h5>
+    </div>
+    <div class="w-full bg-zinc-900">
+      <div class="parent relative top-0 left-0 w-full h-[2000vh]">
+        <div class="w-full sticky top-0 left-0 h-screen overflow-x-hidden">
+          <canvas class="w-full h-screen" id="frame"></canvas>
+          <div class="absolute animate1 z-[2] text-white bottom-10 w-1/2 left-10">
+            <h1 class="leading-20 font-[100] text-3xl">&copy; 2024 DOZE STD</h1>
+            <h1 class="text-3xl">SHAPING BRANDS -> CRAFTING MOTION</h1>
+          </div>
+          <div class="absolute animate2 text-2 flex flex-col z-[2] text-white bottom-10 w-1/2 right-10 text-right opacity-0">
+            <h1 class="leading-20 font-[200] uppercase text-6xl">
+              Transforming Visions
+            </h1>
+            <h1 class="text-xl w-1/2">
+              Building identity and inspiring action. Sculpting digital
+              experience resonate.
+            </h1>
+          </div>
+          <div class="absolute animate3 z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-0">
+            <h1 class="leading-10 font-[200] uppercase text-6xl text-white">
+              Elevating Aesthetics
+            </h1>
+            <h1 class="text-xl">
+              Crafting solutions and exploring new horizons. Evolving narratives
+              and elevating aesthetics in every project.
+            </h1>
+          </div>
+          <div class="w-1/3 panel translate-x-full h-screen bg-white absolute right-0 top-0 z-[2] p-10">
+            <h3 class="panelelem text-xl font-[100]">© 2024 Doze. Std</h3>
+            <p class="panelelem mt-10 text-xl">
+              Sculpting Digital Transforming visions into digital realities.
+              Weaving stories that captivate and innovate. Exploring new
+              possibilities with a focus on narrative evolution. Crafting
+              solutions that engage and elevate.
+            </p>
+            <button class="panelelem border-[1px] px-3 py-2 border-[#555] font-[100] mt-6">
+              Get Reviews →
+            </button>
+            <div class="panelelem absolute bottom-10">
+              <h3 class="text-xl">Innovating Design</h3>
+              <p class="text-sm mt-3">
+                Connecting ideas to foster creativity. Designing impactful
+                experiences that resonate. Feel free to mix and match these
+                sections to suit your website's design needs!
+              </p>
+              <button class="bg-black text-white px-7 text-sm mt-4 py-4 font-[100] capitalize">
+                experience
+              </button>
+            </div>
+          </div>
+          <div class="absolute panelism z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-6xl tracking-tighter opacity-0">
+            &copy; Panelism <span class="line w-10 h-1 bg-white inline-block"></span> 2048
+          </div>
+        </div>
+        
+      </div>
+      <div class="w-full p-10 bg-white">
+        <h1 class="text-8xl tracking-tighter">&reg; Our Recent Works.</h1>
+         <div class="p-5 heading flex flex-col left-1/2 gap-10 mt-20 cursor-pointer"> 
+          <h3 class="text-7xl uppercase">Frizzle Bump</h3>
+          <h3 class="text-7xl uppercase">Wibble Zurf</h3>
+          <h3 class="text-7xl uppercase">Plonk Zorp</h3>
+          <h3 class="text-7xl uppercase">Slibber Klop</h3>
+          <h3 class="text-7xl uppercase">Flibble Sprock</h3>
+          <h3 class="text-7xl uppercase">Glonk Dribble</h3>
+          <h3 class="text-7xl uppercase">Twizzle Blurb</h3>
+          <h3 class="text-7xl uppercase">Skribble Zink</h3>
+          <h3 class="text-7xl uppercase">Quibble Plop</h3>
+          <h3 class="text-7xl uppercase">Blizzy Nerp</h3>
+          <h3 class="text-7xl uppercase">Fuzzle Droop</h3>
+          <h3 class="text-7xl uppercase">Krinkle Splap</h3>
+          <h3 class="text-7xl uppercase">Zonk Blerp</h3>
+          <h3 class="text-7xl uppercase">Quarn Blap</h3>
+          <h3 class="text-7xl uppercase">Snarp Woogle</h3>
+        </div>
+      </div>
+      <div class="container text-white mx-auto px-4 py-16">
+        <div class="flex justify-between">
+            <div>
+                <h1 class="text-4xl font-bold mb-4">PROJECT INQUIRES</h1>
+                <p class="mb-2">Ready to work with us?</p>
+                <p>Reach out to discuss how we can help you build a strong digital brand presence.</p>
+                <a href="mailto:hello@doze-studio.com" class="text-white hover:underline">hello@doze-studio.com</a>
+            </div>
+            <div>
+                <img src="./logo.png" alt="Doze Studio Logo" class="w-115 h-15">
+                <p class="text-sm mt-2">Legals</p>
+            </div>
+        </div>
+
+        <div class="flex justify-between mt-16">
+            <div>
+                <h2 class="text-2xl text-white font-bold mb-4">OUR OFFICE</h2>
+                <p class="mb-1">Doze Studio</p>
+                <p class="mb-1">1b rue Baron</p>
+                <p class="mb-1">44 000 Nantes</p>
+                <p>France</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-3">NETWORKS</h2>
+                <p class="mb-1">+33 2 85 52 19 62</p>
+                <p class="mb-1">
+                    <a href="#" class="text-white hover:underline no-underline magnet">Instagram</a>
+                </p>
+                <p class="mb-1">
+                    <a href="#" class="text-white hover:underline magnet">Linkedin</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white hover:underline magnet">Giphy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script>
+   Shery.mouseFollower();
+    Shery.makeMagnet(".magnet");
+
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      const frames = {
+        currentIndex: 0,
+        maxIndex: 1345,
+      };
+
+      let imagesLoaded = 0;
+      const images = [];
+
+      function preloadImages() {
+        for (let i = 1; i <= frames.maxIndex; i++) {
+          const imageUrl = `./frame/frame_${i
+            .toString()
+            .padStart(4, "0")}.jpeg`;
+          const img = new Image();
+          img.src = imageUrl;
+          img.onload = () => {
+            imagesLoaded++;
+            if (imagesLoaded === frames.maxIndex) {
+              loadImages(frames.currentIndex);
+              startAnimation();
+            }
+          };
+          images.push(img);
+        }
+      }
+
+      function loadImages(index) {
+        if (index >= 0 && index <= frames.maxIndex) {
+          const img = images[index];
+
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+
+          const scaleX = canvas.width / img.width;
+          const scaleY = canvas.height / img.height;
+          const scale = Math.max(scaleX, scaleY);
+
+          const newWidth = img.width * scale;
+          const newHeight = img.height * scale;
+
+          const offsetX = (canvas.width - newWidth) / 2;
+          const offsetY = (canvas.height - newHeight) / 2;
+
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          ctx.imageSmoothingEnabled = true;
+          ctx.imageSmoothingQuality = "high";
+          ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+          frames.currentIndex = index;
+        }
+      }
+
+      function startAnimation() {
+        var tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".parent",
+            start: "top top",
+            scrub: 2,
+          },
+        });
+
+        function updateFrame(index) {
+          return {
+            currentIndex: index,
+            ease: "linear",
+            onUpdate: function () {
+              loadImages(Math.floor(frames.currentIndex));
+            },
+          };
+        }
+
+        tl.to(frames, updateFrame(150), "first")
+          .to(".animate1", { opacity: 0, ease: "linear" }, "first")
+          .to(frames, updateFrame(180), "second")
+          .to(".animate2", { opacity: 1, ease: "linear" }, "second")
+          .to(frames, updateFrame(250), "three")
+          .to(".animate2", { opacity: 1, ease: "linear" }, "three")
+          .to(frames, updateFrame(280), "four")
+          .to(".animate2", { opacity: 0, ease: "linear" }, "four")
+          .to(frames, updateFrame(350), "five")
+          .to(".animate3", { opacity: 1, ease: "linear" }, "five")
+          .to(frames, updateFrame(450), "six")
+          .to(".animate3", { opacity: 1, ease: "linear" }, "six")
+          .to(frames, updateFrame(550), "seven")
+          .to(".animate3", { opacity: 0, ease: "linear" }, "seven")
+          .to(frames, updateFrame(600), "eight")
+          .to(".panel", { x: "0%", ease: "expo" }, "eight")
+          .to(frames, updateFrame(650), "nine")
+          .to(".panel", { x: "0%", ease: "expo" }, "nine")
+          .to(frames, updateFrame(700), "ten")
+          .to(".panel", { opacity: 0, ease: "linear" }, "ten")
+          .to(frames, updateFrame(880), "eleven")
+          .to("canvas", { scale: 0.5, ease: "linear" }, "eleven")
+          .to(frames, updateFrame(950), "twelfth")
+          .to(".panelism", { opacity: 1, ease: "expo" }, "twelfth")
+          .to(frames, updateFrame(1010), "thirteenth")
+          .to(".panelism span", { width: 200, ease: "expo" }, "thirteenth")
+          .to(frames, updateFrame(1150), "fourteen")
+          .to("canvas", { scale: 1, ease: "linear" }, "fourteen")
+          .to(frames, updateFrame(1210), "fifteen")
+          .to(".panelism", { scale: 2, ease: "circ" }, "fifteen")
+          .to(frames, updateFrame(1810), "sixteen")
+          .to(".panelism", { scale: 2, ease: "linear" }, "sixteen");
+      }
+
+      preloadImages();
+
+      window.addEventListener("resize", function () {
+        loadImages(Math.floor(frames.currentIndex));
+      });
+
+      document.querySelectorAll(".heading h3")
+      .forEach(function (elem){
+        gsap.from(elem, {
+          scrollTrigger: {
+            trigger: elem,
+            start: "top 90%",
+            end: "bottom 20%",
+            scrub: 2,
+          },
+          opacity: .3
+        })
+      })
+
+    </script>
+  </body>
+</html>
+
